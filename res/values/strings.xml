@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GameOfLife</string>
+    <string name="action_settings">Настройки</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="gamelife">Conway\'s \nGame of Life</string>
+    <string name="MainImage">Titul image</string>
+    <string name="StartGame">Начать игру</string>
+    <string name="Settings">Настройки</string>
+    <string name="title_activity_game">GameActivity</string>
+	<string name="dialog_title">Настройки</string>
+	<string name="field_size">Размер поля</string>
+	<string name="field_edit_hint">Введите размер поля</string>
+	<string name="game_param">Тип поля</string>
+	<string name="closed_field">Замкнутое</string>
+	<string name="opened_field">Незамкнутое</string>
+	<string name="dialog_ok">OK</string>
+	<string name="dialog_cancel">Cancel</string>
+	<string name="start_game">Запустить игру</string>
+	<string name="stop_game">Остановить игру</string>
+	<string name="game_rules">Правила игры</string>
+	<string name="settings">Настройки</string>
+</resources>

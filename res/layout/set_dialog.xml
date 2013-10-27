@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+	android:layout_marginLeft="10dp">
+    
+    <TextView
+        android:id="@+id/DialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dialog_title"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/FieldSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/DialogTitle"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="10dp"
+        android:text="@string/field_size"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/FieldEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FieldSize"
+        android:hint="@string/field_edit_hint"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:id="@+id/GameParameters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/FieldEdit"
+        android:text="@string/game_param"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/game_param_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/GameParameters"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/closed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/closed_field"
+            android:textColor="@android:color/white"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/opened"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/opened_field"
+            android:textColor="@android:color/white" />
+    </RadioGroup>
+
+</RelativeLayout>

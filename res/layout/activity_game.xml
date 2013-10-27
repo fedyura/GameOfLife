@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity" >
+
+    <GridView 
+        android:id="@+id/gamegrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchMode="columnWidth"
+    	android:gravity="center">
+    </GridView>	
+    
+    <Button 
+        android:id="@+id/startgame_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_game"
+        android:layout_below="@id/gamegrid"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickStartGame"/>    
+        
+    <Button 
+        android:id="@+id/stopgame_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_game"
+        android:layout_below="@id/gamegrid"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickStopGame"/>
+    
+    <Button 
+        android:id="@+id/gamerules_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_rules"
+        android:layout_below="@id/startgame_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@id/startgame_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickRules"/>
+    
+    <Button 
+        android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:layout_below="@id/startgame_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@id/stopgame_button"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickSettings"/>
+
+    <TextView 
+        android:id="@+id/count_gen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:layout_below="@id/settings_button"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
